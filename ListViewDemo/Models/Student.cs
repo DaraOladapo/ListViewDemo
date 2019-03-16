@@ -5,7 +5,7 @@ namespace ListViewDemo.Models
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string FullName { get {return  $"{FirstName} {LastName}"; } }
+        public string FullName => $"{FirstName} {LastName}";
         public int Level { get; set; } = 100;//default level to 100
     }
 }
